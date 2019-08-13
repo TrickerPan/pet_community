@@ -1,2 +1,5 @@
 # Production Configuration
 production.py
+
+# pycache
+__pycache__/
