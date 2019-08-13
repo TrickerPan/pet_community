@@ -23,4 +23,5 @@ class Role(db.Model):
     default = db.Column(db.Boolean, index=True, default=False)
     permissions = db.Column(db.Integer)
     created_at = db.Column(db.DateTime, index=True, default=datetime.utcnow)
+    created_by = db.Column(UUID(as_uuid=True))
     updated_at = db.Column(db.DateTime, index=True, onupdate=datetime.utcnow)
